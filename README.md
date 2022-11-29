@@ -54,7 +54,7 @@ $$Q(s,a)= \mathbb{E}(R(s',s,a)+\gamma v(s'))$$
 While the policy iteration and value iteration need to have a model of what the future state $s'$ is so that we can use that value to the next state by recursive dynamic programming, the quality function
 have all these information implicitly in the function so we can optimize directly and learn iterate this quality function and iteratively improve it. 
 For each state do:
-$$ \pi^{*}: select a^{*} where Q^{*}(s,a^{*})=max_{a}Q^{*}(s,a) $$
+$$\pi^{*}: select a^{*} where Q^{*}(s,a^{*})=max_{a}Q^{*}(s,a)$$
 The Q learning is consisted of the following steps: 
 * Select an action
 * Update the Q[s,a] table

@@ -69,9 +69,9 @@ The latter is known as <b>exploitation</b>.
 * Value iteration led to faster learning than the Q-learning algorithm.
 
 ### Cumulative discounted rewrd over time
-<img src="img/optimal_policy.png">
-<img src="img/policy_iteration.png">
-<img src="img/qlearning.png">
+<img src="Img/optimal_policy.png">
+<img src="Img/policy_iteration.png">
+<img src="Img/qlearning.png">
 
 We find that after trainnin and fine tuning the Q-learning model, the agent find the optimal policy for both model free and model based algorithme. 
 

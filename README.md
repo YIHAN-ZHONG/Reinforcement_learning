@@ -16,8 +16,10 @@ The environment implemented is Cliff Walking Environment (from Sutton's book).
 You can find the code in: [Cliff_walking](Cliff_walking)
 
 ## Overview of the methods
-Policy: $$ \pi(s,a) = Pr(a=a|s=s)$$
-Value function: $$ V_{\pi}(s)=\mathbb{E}[\sum_{t=1}^\infty\gamma^tr(s_{t})]$$
+Policy: 
+$$ \pi(s,a) = Pr(a=a|s=s)$$
+Value function: 
+$$ V_{\pi}(s)=\mathbb{E}[\sum_{t=1}^\infty\gamma^tr(s_{t})] $$
 
 The objective is to find the optimal pollicy to maximize future rewards. 
 
@@ -29,7 +31,7 @@ The model basded algortithme is based on Bellman's function and Dynamic programm
 * Iterate over each state until it converge to such tolerance
 * Output a deterministic policy which maximzes the value function
 
-### Policy iteration
+#### Policy iteration
 * Randomly initialize the policy 
 * Two step plicy 
     * Iteratively update the value function by locking in that policy
@@ -37,9 +39,12 @@ The model basded algortithme is based on Bellman's function and Dynamic programm
 
 ### Model free RL with Q-learning
 Introduce of a $Q$ function, which is a joint possibility of state/action pair. 
-While the 
-$$Q(s,a)= \mathbb{E}(R(s',s,a)+\gammav(s'))$$
+$$Q(s,a)= \mathbb{E}(R(s',s,a)+\gamma v(s'))$$
+While the policy iteration and value iteration need to have a model of what the future state $s'$ is so that we can use that value to the next state by recursive dynamic programming, the quality function
+have all these information implicitly in the function so we can optimize directly and learn iterate this quality function and iteratively improve it. 
 
+
+## Comparison of the results
 which one converge fast 
 
 

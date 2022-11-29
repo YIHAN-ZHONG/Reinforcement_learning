@@ -17,9 +17,9 @@ You can find the code in: [Cliff_walking](Cliff_walking)
 
 ## Overview of the methods
 Policy: 
-$$ \pi(s,a) = Pr(a=a|s=s)$$
+$\pi(s,a) = Pr(a=a|s=s)$
 Value function: 
-$$ V_{\pi}(s)=\mathbb{E}[\sum_{t=1}^\infty\gamma^tr(s_{t})] $$
+$V_{\pi}(s)=\mathbb{E}[\sum_{t=1}^\infty\gamma^tr(s_{t})]$
 
 The objective is to find the optimal pollicy to maximize future rewards. 
 
